@@ -15,6 +15,11 @@ class EmployeesController extends Controller
 
     use Storimage;
 
+    // public function __invoke()
+    // {
+    //     $this->middleware('auth');
+    // }
+
     public function index()
     {
         $employees  = Employee::get();
